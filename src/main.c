@@ -7,7 +7,8 @@ int main(void)
 	u16 i;
 	VDP_init();
 	col_init();
-	col_puts(0,0,"Hello world. Is this text drawing function particularly slow? It should wrap at the 80 column line, but it does not recognize that it is breaking in the middle of a word.");
+	
+	col_puts(0,0,"  ---------------\n  |.............|             ---------\n  |....{......$.|             |.......|\n  |.............|            #.....{..|\n  |.............|          ###|.....=.|\n  -.--.---.------#############...<....|\n   #@  ###########       ###  |.......|\n    #    #  #  #         #    ---------\n  ############# #\n  +\n\n\n\n\n\n\n\n\nMoffitt the Aspirant         St:11 Dx:9 Co:18 In:8 Wi:18 Ch:11  Chaotic\nDlvl:1  $:0  HP:14(14) Pw:6(6) AC:7  Exp:1\n");
 	for (;;)
 	{
 		VDP_waitVSync();

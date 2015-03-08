@@ -12,11 +12,6 @@ void col_puts(u8 x, u8 y, char *s)
 	u8 orig_x = x;
 	while(*s)
 	{
-		if (x == 40)
-		{
-			x = 0;
-			y++;
-		}
 		if (*s == '\n')
 		{
 			y++;
@@ -35,6 +30,7 @@ void col_puts(u8 x, u8 y, char *s)
 		{
 			y++;
 			x = orig_x;
+			s++;
 		}
 		else if (*s)
 		{
@@ -44,8 +40,8 @@ void col_puts(u8 x, u8 y, char *s)
 				(*s + COL_FONT_SEL + (COL_FONT_VRAM_OFFSET/32))),
 				x,y);
 			s++;
+			x++;
 		}
-		x++;
 	}
 }
 
