@@ -34,5 +34,6 @@
 *.swo
 
 # Project-specific files
+boot/rom_head.bin
 temp.bin
 out.bin
