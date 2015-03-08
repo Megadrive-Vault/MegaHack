@@ -179,3 +179,4 @@ clean:
 	$(RM) $(RESOURCES)
 	$(RM) *.o *.bin *.elf *.elf_scd *.map *.iso
 	$(RM) boot/*.o boot/*.bin
+	$(RM) $(RESS:.res=.h) $(RESS:.res=.s)
