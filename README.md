@@ -1,0 +1,2 @@
+# MegaHack
+NETHACK FOR SEGA YIS
