@@ -81,6 +81,9 @@ OBJS = $(RESOURCES)
 
 all: out.bin 
 
+run: out.bin
+	@util/Fusion $< 2> /dev/null
+
 boot/sega.o: boot/rom_head.bin
 	$(AS) $(ASFLAGS) boot/sega.s -o $@
 
