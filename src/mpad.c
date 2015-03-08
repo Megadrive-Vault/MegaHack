@@ -21,3 +21,5 @@ unsigned char pad_read(unsigned char pl)
 	ret |= (*ctrlr & 0x10) | ((*ctrlr & 0x20) << 2); // Grab A and Start
 	return ~ret;
 }
+
+/* vim: set noet: */

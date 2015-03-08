@@ -38,16 +38,15 @@ void col_puts(u8 x, u8 y, char *s)
 		}
 		else if (*s)
 		{
-			if (*s)
-			{
-				VDP_setTileMapXY(
-					VDP_PLAN_B,
-					TILE_ATTR_FULL(0,0,0,0,
-					(*s + COL_FONT_SEL + (COL_FONT_VRAM_OFFSET/32))),
-					x,y);
-			}
+			VDP_setTileMapXY(
+				VDP_PLAN_B,
+				TILE_ATTR_FULL(0,0,0,0,
+				(*s + COL_FONT_SEL + (COL_FONT_VRAM_OFFSET/32))),
+				x,y);
 			s++;
 		}
 		x++;
 	}
 }
+
+/* vim: set noet: */

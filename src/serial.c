@@ -52,3 +52,4 @@ u8 serial_get_full(u8 num)
 	return (*port) & 0x01;
 }
 
+/* vim: set noet: */
