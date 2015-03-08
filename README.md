@@ -1,2 +1,4 @@
-# SegaSerial
-"Drivers" for the Megadrive's controller ports used as serial for debugging
+MegaHack
+========
+
+A port of Nethack to Sega Genesis
