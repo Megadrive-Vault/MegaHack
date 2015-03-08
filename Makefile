@@ -107,6 +107,7 @@ out.iso: out.elf_scd
 %.bin: %.elf
 	$(OBJC) -O binary $< temp.bin
 	dd if=temp.bin of=$@ bs=8K conv=sync
+	$(RM) temp.bin
 
 %.elf: $(OBJS) $(BOOT_RESOURCES)
 	$(CC) -o $@ $(LINKFLAGS) $(BOOT_RESOURCES) $(ARCHIVES) $(OBJS) $(LIBS)
