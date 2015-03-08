@@ -27,3 +27,12 @@
 *.i*86
 *.x86_64
 *.hex
+
+# Vim files
+*~
+*.swp
+*.swo
+
+# Project-specific files
+temp.bin
+out.bin
