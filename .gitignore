@@ -37,3 +37,4 @@
 boot/rom_head.bin
 temp.bin
 out.bin
+res/*.h
