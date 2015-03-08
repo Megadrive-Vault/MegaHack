@@ -79,10 +79,12 @@ RESOURCES+=$(S80S:.s80=.o)
 
 OBJS = $(RESOURCES)
 
+.PHONY: all run clean
+
 all: out.bin 
 
 run: out.bin
-	@util/Fusion $< 2> /dev/null
+	@exec util/Fusion $< 2> /dev/null
 
 boot/sega.o: boot/rom_head.bin
 	$(AS) $(ASFLAGS) boot/sega.s -o $@
