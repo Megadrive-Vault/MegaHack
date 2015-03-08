@@ -54,7 +54,7 @@ RESS=$(wildcard res/*.res)
 #MVSS+=$(wildcard *.mvs)
 #TFDS+=$(wildcard *.tfd)
 #WAVS+=$(wildcard *.wav)
-RESS+=$(wildcard *.res)
+#RESS+=$(wildcard *.res)
 #WAVPCMS+=$(wildcard *.wavpcm)
 
 #RESOURCES+=$(BMPS:.bmp=.o)
